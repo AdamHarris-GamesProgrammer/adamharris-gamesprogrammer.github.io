@@ -101,6 +101,17 @@ input, select, textarea {
 		background: #312450;
 	}
 
+	.container{
+		position: relative;
+		text-align: center;
+		padding-top: 0em;
+	}
+
+	.centered{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+	}
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
