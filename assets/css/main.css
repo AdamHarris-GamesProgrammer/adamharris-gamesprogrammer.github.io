@@ -3075,7 +3075,7 @@ input, select, textarea {
 			}
 
 		.spotlights > section:nth-child(2) {
-			background-color: rgba(0, 0, 0, 0.05);
+			background-color: rgba(0, 0, 0, 0.00);
 		}
 
 		.spotlights > section:nth-child(3) {
@@ -3251,7 +3251,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-color: #3e3e3e;
 		}
 
 		.wrapper.style1-alt {
@@ -3259,7 +3259,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+			background-color: #3e3e3e;
 		}
 
 		.wrapper.style2-alt {
