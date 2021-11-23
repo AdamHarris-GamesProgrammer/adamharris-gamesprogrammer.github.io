@@ -9,315 +9,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
 
-<style>
-	* {
-  margin: 0;
-  padding: 0;
-}
-
-:root {
-  --background-colorA: rgba(255,255,255,.5);
-  --background-colorB: #f6f6f6;
-  --indie-projects-color: #f5f5f5;
-  --uni-projects-color: #f1f1f;
-  --navbar-color: #A7BC5B;
-  --text-colorA: #8DA242;
-  --text-colorB: #A7BC5B;
-}
-
-#welcome-section {
-  background-color: var(--background-colorA);
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
-}
-
-#name{
-  margin:0;
-  font-size: 4rem;
-  color: var(--text-colorA);
-  font-family: Raleway, sans-serif;
-}
-
-#sub-name {
-  margin:0;
-  font-size:22px;
-  color: var(--text-colorB);
-  font-family: 'Roboto Mono', monospace;
-  
-}
-
-#about {
-  background-color: var(--background-colorB);
-  min-height: 10vh;
-  padding-bottom: 15px;
-}
-
-#contact {
-  background-color: var(--background-colorA);
-  min-height: 83vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
-}
-
-#socials  {
-  font-family: Raleway, sans-serif;
-}
-
-#contact h1 {
-  font-size: 48px;
-}
-
-#footer {
-  background-color: var(--navbar-color);
-  min-height: 10vh;
-  color: white;
-  font-family: 'Roboto Mono', sans-serif;
-}
-
-#footer-text {
-  color: white;
-  font-family: 'Roboto Mono', sans-serif;
-  margin: 10px auto;
-}
-
-nav a {
-  text-decoration: none;
-  color: #ffffff;
-  padding: 10px 20px;
-  font-family: 'Roboto Mono', monospace;
-  font-size: 18px;
-}
-
-p, li {
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-a {
-  color: var(--navbar-color);
-  text-decoration: none;
-  
-}
-
-nav a:hover {
-  transform: scale(1.1);
-}
-
-nav {
-  position: fixed;
-  width: 100%;
-  
-  display: flex;
-  font-size: 22px;
-  justify-content: flex-end;
-  align-items: center;
-  min-height: 7vh;
-  background-color: var(--navbar-color);
-}
-
-#name {
-  padding-left: 10px;
-  font-size: 68px;
-}
-
-.rounded-img{
-  border-radius: 50%;
-  border-width: 5px;
-  border-color: #A7BC5B;
-  border-style: solid;
-}
-
-.btn {
-  transition: transform 0.3s ease-out;
-  padding: 1rem 2rem;
-  text-shadow: 2px 2px 1px #ddd;
-}
-
-.btn:hover {
-  transform: translateY(8px);
-}
-
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-h1,h2,h3 {
-  color: var(--text-colorA);
-  text-align: center;
-  margin: 0;
-  font-family: Raleway, sans-serif;
-}
-
-h2 {
-  font-size: 38px;
-}
-
-#about p, hr {
-  margin: auto;
-  width: 95%;
-}
-
-#about p {
-  margin-bottom: 10px;
-}
-
-#about li {
-  margin: auto;
-  width: 90%;
-  text-align: center;
-}
-
-#projects {
-  background-color: var(--background-colorB);
-  min-height: 100vh;
-}
-
-#projects h2 {
-  width: 100%;
-}
-
-#indie-projects {
-  background-color: var(--background-colorB);
-  margin: 0;
-  padding-bottom: 15px;
-}
-.project-tile {
-  width: 100%;
-  min-width: 300px;
-  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.6);
-  background-color: #ffffff;
-  border-radius: 10px;
-  padding: 5px;
-  text-align: justify;
-}
-.project-tile ul {
-  padding-left: 15px;
-}
-
-.project-tile img {
-  max-width: 80%;
-  display: block;
-  margin: auto;
-  border-radius: 5px;
-  padding: 10px 10px;
-}
-
-.project-tile button {
-  display: block;
-  margin: auto;
-  padding: 10px;
-  margin: 10px auto 10px auto;
-  width: 85%;
-  border-radius: 5px;
-  background-color: var(--navbar-color);
-  color: white;
-  font-size: 14px;
-  font-family: 'Roboto Mono', sans-serif;
-}
-.project-tile a {
-    color: white;
-  font-size: 14px;
-  font-family: 'Roboto Mono', sans-serif;
-}
-
-.projects {
-  min-height: 50vh;
-  
-  display: grid;
-  grid-template-columns: repeat(3, minmax(180px, 30%));
-
-  justify-content: space-around;
-  margin: 20px auto 20px auto;
-}
-
-#uni-projects {
-  background-color: var(--background-colorB);
-  padding-bottom: 20px;
-}
-
-  #socials {
-    color: var(--navbar-color);
-    font-size: 36px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height 80vh;
-  }
-
-@media(max-width: 970px) {
-  .project-tile{
-    min-height: 70vh;
-    width: 100%;
-    box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.6);
-    background-color: #ffffff;
-    border-radius: 10px;
-   }
-
-  .projects {
-    min-height: 50vh;
-    display: grid;
-    justify-content: space-around;
-    grid-template-columns: repeat(2, minmax(150px, 45%));
-    grid-gap: 10px;
-    margin: 20px auto 20px auto;
-    padding: 10px 10px;
-    
-  }
-}
-
-@media(max-width: 660px){
-  .project-tile{
-    min-height: 50vh;
-    width: 80%;
-    box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.6);
-    margin: 10px auto 50px auto;
-    background-color: #ffffff;
-    border-radius: 10px;
-  }
-  .projects {
-      min-height: 50vh;
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-  }
-
-  nav {
-    flex-direction: column;
-  }
-  nav a {
-    text-align: center;
-    font-size: 14px;
-    padding: 5px;
-  }
-  
-  #name {
-    font-size: 48px;
-  }
-  #sub-name {
-    font-size: 18px; 
-  }
-  
-  h1, h2, h3, p, ul, li {
-    text-align: center;
-  }
-  
-  .btn {
-    font-size: 20px;
-    padding: 1rem 0.5rem;
-  }
-}
-</style>
 
 <head>
 <meta name="viewport" content="width=device-width">
@@ -340,121 +33,80 @@ h2 {
     <h2>About Me</h2>
     <hr>
     <h3>Bio</h3>
-    <p>Second year BSc (Hons) Computer Games Programming student at Staffordshire University with a total of 6 years of programming experience. Throghout this time I have used various programming languages such as C++ and C#, these have been used to create various projects in a wide array of industry standard tools such as Unity Game Engine, OpenGL, and DirectX 11.</p>
+    <p>Third year BSc (Hons) Computer Games Programming student at Staffordshire University with a total of 6 years of programming experience. Throghout this time I have used various programming languages such as C++ and C#, these have been used to create various projects in a wide array of industry standard tools such as Unity Game Engine, OpenGL, and DirectX 11.</p>
     <hr>
     <h3>Education</h3>
     <ul>
-      <li>Second Year student at Staffordshire University studying a BSc (Hons) Computer Games Programming degree</li>
+      <li>Third Year student at Staffordshire University studying a BSc (Hons) Computer Games Programming degree</li>
       <li>Graduated from Boston College with a Triple Distinction Star in Computing with a focus on Software Design and Development</li>
     </ul>
   </div>
+
   <div id="projects">
-      <h2>Indie Projects</h2>
-      
-      <div class="projects" id="indie-projects">
-        <div class="project-tile" id="project1">
-          <h3>Belghast's Dominion</h3>
-          <hr>
-          <img src="images/BelghastsDominion.png" alt="Image of a scene in Belghast's Dominion"/>
-          <p>Belghast's Dominion is a third person fantasy RPG that I aim to complete by the end of 2021.</p> 
-          <p>Made in Unity 2019.4</p>
-          <p>Development Time: June 2020 - Ongoing</p>
-          <p>The games current features include:</p>
-          <ul>
-            <li>Combat</li>
-            <li>Enemy AI</li>
-            <li>Inventory Systems</li>
-            <li>Equipment Systems</li>
-          </ul>
-          <p>Features to come:</p>
-          <ul>
-            <li>Dialog</li>
-            <li>Quests</li>
-            <li>Magic based combat</li>
-            <li>Story and Side Quests</li>
-            <li>Character Customisation</li>
-          </ul>
-          <button><a href="https://github.com/AdamHarris-GamesProgrammer/RPG-Prototype" target="_blank">GitHub Repository</a></button>
-        </div>
-        <div class="project-tile" id="project2">
-          <h3>Zombie House</h3>
-          <hr>
-          <img src="images/ZombieHouse.png" alt="Image of a scene in Zombie House"/>
-          <p>Zombie House is a first person wave-based shooter, in which the player has to survive for as many rounds as possible.</p>
-          <p>Made in Unity 2019.3</p>
-          <p>Development Time: April 2020 - June 2020</p>
-          <p>The games current features include:</p>
-          <ul>
-            <li>Wave-based fighting</li>
-            <li>Enemy AI</li>
-            <li>Point-based door opening system</li>
-            <li>One level for fighting in</li>
-          </ul>
-
-          <button><a href="https://github.com/AdamHarris-GamesProgrammer/Operation-Delta" target="_blank">GitHub Repository</a></button>
-        </div>
-        <div class="project-tile" id="project3">
-          <h3>Prosperity</h3>
-          <hr>
-          <img src="images/Prosperity.png" alt="Image of the logo for Prosperity."/>
-          <p>Prosperity is a simple idle-based game. The objective is to slowly industralize the Earth, as the player gets further in the industry systems the earth's texture changes to show the damage that was done. This was created for Ludum Dare 45 with the theme "Start With Nothing".</p>
-          <p>Made in Unity 2019.1</p>
-          <p>Development Time: 48 hours in October 2019</p>
-          <p>The games features include:</p>
-          <ul>
-            <li>Idle-based gameplay</li>
-            <li>Resource Management</li>
-          </ul>
-
-          <button><a href="https://github.com/AdamHarris-GamesProgrammer/LudumDare45" target="_blank">GitHub Repository</a></button>
-        </div>
-      </div>
-      
-
     <div>
       <h2>University Projects</h2>
       <div class="projects" id="uni-projects">
         <div class="project-tile" id="project1">
-          <h3>DirectX graphics engine</h3>
+          <h3>Roach Collector</h3>
           <hr>
           <img src="images/DX11.PNG" alt="Image of my DirectX graphics simulation"/>
-          <p>During my second year of university I was tasked with creating a basic graphics engine in DirectX 11.2. I added some additional features such as multiple shaders, normal mapping, skybox, and multiple types of lights such as; directional, point, and spotlights.</p>
-          <p>Development time: 8 weeks</p>
-          <p>Grade recieved: Awaiting result</p>
+          <button><a href="https://github.com/AdamHarris-GamesProgrammer/FGAGS" target="_blank">Learn More</a></button>
           <button><a href="https://github.com/AdamHarris-GamesProgrammer/FGAGS" target="_blank">GitHub Repository</a></button>
         </div>
         <div class="project-tile" id="project2">
-          <h3>Super Mario Bros Parody</h3>
+          <h3>DirectX Physics and Graphics Engine</h3>
           <hr>
-
-          <img src="images/SMB.PNG" alt="Image of my Super Mario Bros. Parody"/>
-                    <p>During my first year of university I was tasked with creating a 2d game framework in SDL/C++ and use it to create a parody of the original Super Mario Bros game. I went beyond the specification we were given and added additional features such as; tile-mapping from a file, paralax background scrolling, a entity component system and a 5 levels.</p>
-          <p>Development time: 13 weeks</p>
-          <p>Grade recieved: 100/100</p>
-          <button><a href="https://github.com/AdamHarris-GamesProgrammer/Project-BlueSky" target="_blank">GitHub Repository</a></button>
+          <img src="images/DX11.PNG" alt="Image of my DirectX graphics simulation"/>
+          <button><a href="https://github.com/AdamHarris-GamesProgrammer/FGAGS" target="_blank">Learn More</a></button>
+          <button><a href="https://github.com/AdamHarris-GamesProgrammer/FGAGS" target="_blank">GitHub Repository</a></button>
         </div>
         <div class="project-tile" id="project3">
-          <h3>Starhopper OpenGL game</h3>
+          <h3>Multi-Platform CPU-Based Ray Tracer</h3>
           <hr>
-          <img src="images/OpenGL.png" alt="Image of Starhopper game"/>
-                              <p>During my first year of university I was tasked with creating a 3d graphics simulation in OpenGL Core, this simulation had a few requirements such as loading data from a text file for meshes, and use of basic texturing. I added additional features to this such as a OBJ loader, collisions based on AABB bounding boxes, and also a simple game. The game I created in my framework was a timed-collection game in which the player had to collect as many "Star Stones" in 30 seconds as they could when the player collided with them it would add one to the score and then move it to another location. There was also a highscore system implemented to allow for players to compete with each other.</p>
-          <p>Development time: 10 weeks</p>
-          <p>Grade recieved: 81/100</p>
-          <button><a href="https://github.com/AdamHarris-GamesProgrammer/FOGGS-A2" target="_blank">GitHub Repository</a></button>
+          <img src="images/DX11.PNG" alt="Image of my DirectX graphics simulation"/>
+          <button><a href="https://github.com/AdamHarris-GamesProgrammer/FGAGS" target="_blank">Learn More</a></button>
+          <button><a href="https://github.com/AdamHarris-GamesProgrammer/FGAGS" target="_blank">GitHub Repository</a></button>
         </div>
       </div>
     </div>
+
+    <h2>Indie Projects</h2>
+    <div class="projects" id="indie-projects">
+      <div class="project-tile" id="project1">
+        <h3>Belghast's Dominion</h3>
+        <hr>
+        <img src="images/BelghastsDominion.png" alt="Image of a scene in Belghast's Dominion"/>
+        <button><a href="https://github.com/AdamHarris-GamesProgrammer/RPG-Prototype" target="_blank">Learn More</a></button>
+        <button><a href="https://github.com/AdamHarris-GamesProgrammer/RPG-Prototype" target="_blank">GitHub Repository</a></button>
+      </div>
+      <div class="project-tile" id="project2">
+        <h3>Learning OpenGL</h3>
+        <hr>
+        <img src="images/BelghastsDominion.png" alt="Image of a scene in Belghast's Dominion"/>
+        <button><a href="https://github.com/AdamHarris-GamesProgrammer/RPG-Prototype" target="_blank">Learn More</a></button>
+        <button><a href="https://github.com/AdamHarris-GamesProgrammer/RPG-Prototype" target="_blank">GitHub Repository</a></button>
+      </div>
+      <div class="project-tile" id="project3">
+        <h3>Procedural Landmass Generation</h3>
+        <hr>
+        <img src="images/BelghastsDominion.png" alt="Image of a scene in Belghast's Dominion"/>
+        <button><a href="https://github.com/AdamHarris-GamesProgrammer/RPG-Prototype" target="_blank">Learn More</a></button>
+        <button><a href="https://github.com/AdamHarris-GamesProgrammer/RPG-Prototype" target="_blank">GitHub Repository</a></button>
+      </div>
+    </div>
   </div>
+
+
   <div id="contact">
     <h1>Want to contact me?</h1>
     <div id="socials">
       <a href="https://github.com/AdamHarris-GamesProgrammer" target="_blank" id="profile-link" class="btn"><i class="fab fa-github"></i>GitHub</a>
       <a href="https://twitter.com/AdamHarrisDev" target="_blank" class="btn"><i class="fab fa-twitter" ></i>Twitter</a>
     <a href="https://www.linkedin.com/in/adam-harris-dev/" target="_blank" class="btn"><i class="fab fa-linkedin"></i>LinkedIn</a>
-      
+
     </div>
   </div>
   <footer id="footer">
     <h3 id="footer-text">Adam Harris &copy;2021</h3>
-  </footer> 
+  </footer>
 </main>
