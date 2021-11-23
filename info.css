@@ -95,7 +95,7 @@ p, li {
 }
 
 a {
-  color: var(--navbar-color);
+  color: white;
   text-decoration: none;
 
 }
@@ -158,6 +158,13 @@ h1,h2,h3 {
 .features {
   display: grid;
   grid-template-columns: 50% 50%;
+}
+
+.tweets {
+  display: flex;
+  width: 50%;
+  height: auto;
+  margin: auto;
 }
 
 h2 {
