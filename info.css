@@ -158,6 +158,7 @@ h1,h2,h3 {
 .features {
   display: grid;
   grid-template-columns: 50% 50%;
+  grid-row-gap: 3em;
 }
 
 .tweets {
