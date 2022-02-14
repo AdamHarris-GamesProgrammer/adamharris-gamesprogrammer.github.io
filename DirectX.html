@@ -21,12 +21,13 @@
     <h2 id = "projectTitle">Project RedSky - DirectX Graphics and Physics Engine</h2>
     <a href="index.html">Back</a>
   </nav>
-
+<div id="seperator"></div>
 <p>Project RedSky is a DirectX 11 based graphics and physics engine built as part of my Further Games and Graphics module, this project went through many iterations and was heavily changed from the original project we were given (which just drew a single triangle onto the screen).  </p>
 <p>Built in C++14 using DirectX 11.2</p>
 <p>Built in 6 months. October 2020 - April 2021</p>
   <button><a href="https://github.com/AdamHarris-GamesProgrammer/FGAGS" target="_blank">GitHub Repository</a></button>
   <div id = "body">
+    <div id="seperator"></div>
     <h2>Features</h2>
     <div class="features">
       <div>
@@ -48,12 +49,14 @@
     </div>
     <div>
       <h2>Tweets</h2>
+      <div id="seperator"></div>
       <div class="tweets">
         <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I&#39;ve now decided that my project for my physics assignment is done. Complete with particle and rigid body physics, and collision detection/resolution. Last thing to make is just a &quot;home screen&quot; which will say what each level does. <a href="https://twitter.com/hashtag/gamedev?src=hash&amp;ref_src=twsrc%5Etfw">#gamedev</a> <a href="https://twitter.com/hashtag/programming?src=hash&amp;ref_src=twsrc%5Etfw">#programming</a> <a href="https://twitter.com/hashtag/physics?src=hash&amp;ref_src=twsrc%5Etfw">#physics</a> <a href="https://twitter.com/hashtag/gamedevelopment?src=hash&amp;ref_src=twsrc%5Etfw">#gamedevelopment</a> <a href="https://t.co/GdH6aMuUef">pic.twitter.com/GdH6aMuUef</a></p>&mdash; Adam Harris (@AdamHarrisDev) <a href="https://twitter.com/AdamHarrisDev/status/1378784752711434243?ref_src=twsrc%5Etfw">April 4, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Another Update to my <a href="https://twitter.com/hashtag/DirectX?src=hash&amp;ref_src=twsrc%5Etfw">#DirectX</a> project today, Implemented some IMGUI controls to my window to allow me to control various aspects in my project. Also, I can now move around the object I&#39;ve selected. <a href="https://twitter.com/hashtag/gamedev?src=hash&amp;ref_src=twsrc%5Etfw">#gamedev</a> <a href="https://twitter.com/hashtag/gamedevelopment?src=hash&amp;ref_src=twsrc%5Etfw">#gamedevelopment</a> <a href="https://twitter.com/hashtag/indiedev?src=hash&amp;ref_src=twsrc%5Etfw">#indiedev</a> <a href="https://twitter.com/hashtag/programming?src=hash&amp;ref_src=twsrc%5Etfw">#programming</a> <a href="https://twitter.com/hashtag/graphicsprogramming?src=hash&amp;ref_src=twsrc%5Etfw">#graphicsprogramming</a> <a href="https://t.co/UzrJdDEOe4">pic.twitter.com/UzrJdDEOe4</a></p>&mdash; Adam Harris (@AdamHarrisDev) <a href="https://twitter.com/AdamHarrisDev/status/1333776215635877888?ref_src=twsrc%5Etfw">December 1, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </div>
     <div>
+      <div id="seperator"></div>
       <h2>Challenges</h2>
       <p>Architectural design: The early days of this project was a very poorly structured project that did a lot of things in a very confusing way, this made expanding and maintaining current features a massive pain. I resolved this by first introducing a “Bindable” system this means that every object that interacted with DirectX would have bindables for vertices, indices, textures etc when the object would need to be drawn it would mean each of these Bindables would be bound to the pipeline, this massively reduced code duplication and improved workflow in the project. I also introduced a entity component system to handle physics, transforms and rendering this reduced the amount of setup for each object to essentially none. </p>
       <p>Creating a Reliable and readable scene loading system: Each scene in this project was loaded from a JSON file that listed all of the objects in the scene and each component they would have along with default values for all that components attributes, this massively reduced the amount of initialization code for each scene and made handling the levels much easier. </p>

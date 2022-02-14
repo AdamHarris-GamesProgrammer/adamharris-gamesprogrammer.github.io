@@ -90,8 +90,15 @@ nav h2 {
   font-family: 'Roboto Mono', monospace;
 }
 
+
+#seperator {
+  padding-top: 1em;
+}
+
 p, li {
   font-family: 'Roboto Condensed', sans-serif;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 a {
@@ -118,7 +125,6 @@ nav a:hover {
 }
 
 nav {
-
   width: 100%;
 	margin: 0;
   font-size: 22px;
@@ -163,7 +169,8 @@ h1,h2,h3 {
 
 .tweets {
   display: flex;
-  width: 50%;
+  justify-content: space-around;
+  width: 90%;
   height: auto;
   margin: auto;
 }
