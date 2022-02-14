@@ -156,7 +156,13 @@ h2 {
 
 #about p, hr {
   margin: auto;
+  padding-left:3%;
+  padding-right: 3%;
   width: 95%;
+}
+
+#about ul {
+  text-decoration: none;
 }
 
 #about p {
@@ -167,6 +173,8 @@ h2 {
   margin: auto;
   width: 90%;
   text-align: center;
+  text-decoration: none;
+  list-style: none;
 }
 
 #projects {
