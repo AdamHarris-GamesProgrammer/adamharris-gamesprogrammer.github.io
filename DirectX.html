@@ -61,6 +61,18 @@
       <p>Architectural design: The early days of this project was a very poorly structured project that did a lot of things in a very confusing way, this made expanding and maintaining current features a massive pain. I resolved this by first introducing a “Bindable” system this means that every object that interacted with DirectX would have bindables for vertices, indices, textures etc when the object would need to be drawn it would mean each of these Bindables would be bound to the pipeline, this massively reduced code duplication and improved workflow in the project. I also introduced a entity component system to handle physics, transforms and rendering this reduced the amount of setup for each object to essentially none. </p>
       <p>Creating a Reliable and readable scene loading system: Each scene in this project was loaded from a JSON file that listed all of the objects in the scene and each component they would have along with default values for all that components attributes, this massively reduced the amount of initialization code for each scene and made handling the levels much easier. </p>
     </div>
+	<h2> How I could've improved it</h2>
+	<ul>
+		<li>Implemented a automated Collision testing system. Currently I have to manually write out code for each collider in the scene to see if it collides with other objects. It would be much better if this was automated through a "Physics World" concept which could also handle a Spatial Partitioning system to reduce the amount of collision queries. As a sidenote, I have implemented this system in TimothE2D Game Framework which can be seen <a href ="Tim.html" style = "color: var(--text-colorA);">here</a></li>
+		<li>The ability to load more types of meshes such as FBX files. Currently this project can only function with obj files. Ideally I could either use a model loading library such as Assimp or write my own importers for each type of model file I wish to support</li>
+		<li>Collision handlers for meshes as opposed to just primitive shapes. This would vastly expand the amount of things this framework could accomplish</li>
+		<li>A "Collision Channel" system (Similar to how Unreal Engine handles collisions). This would allow me to say this collider can only collide with certain channels as opposed to everything</li>
+		<li>Dockable ImGUI Branch. When I first created this project ImGUI Docker was still in active development and as such was not used for this project. But through the use of the Docker branch the UI could look a lot nicer</li>
+		<li>Proper scene file system. The scene loading system used here has not been expanded to save what components a object has attached to it and as such a new class was created for each level. Which is way too "hands on"</li>
+	</ul>
+	
+	<h2> Demonstration Video </h2>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/PeM9SYRTfFY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 
   <footer id="footer">
