@@ -18,6 +18,13 @@
   --text-colorB: #A7BC5B;
 }
 
+iframe {
+	align-items: center;
+	display: block;
+    margin: 0 auto;
+    background-color: #777;
+}
+
 #welcome-section {
   background-color: var(--background-colorA);
   height: 100vh;
