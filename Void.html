@@ -13,50 +13,48 @@
 
 <head>
 <meta name="viewport" content="width=device-width">
-<title>Procedural Landmass Generation</title>
+<title>The Void Mobile Game</title>
 </head>
 
 <main>
   <nav id="navbar">
-    <h2 id = "projectTitle">Procedural Landmass Generation</h2>
+    <h2 id = "projectTitle">The Void - Mobile Game</h2>
     <a href="index.html">Back</a>
   </nav>
 <div id="seperator"></div>
-<p>During August 2021, I became intrigued with procedural landmass generation and created a project to generate basic textured landmasses that could also be interactive game environments, as such these chunks would also be given colliders to allow a player to walk on them. </p>
-<p>Built in Unity 2021.4.14f1</p>
-<p>Built in 1 month. August 2021 - August 2021</p>
-  <button><a href="https://github.com/AdamHarris-GamesProgrammer/LandmassGeneration" target="_blank">GitHub Repository</a></button>
+<p>Following my graduation from University I wanted to create a game and publish it. After debating the type of game I wanted to make for a while I opted on a infinite sidescroller set in a ongoing apocalyptic world. Programmatically speaking the game is pretty basic, but it allows me to learn new skills in terms of art, level design, and user experience design.</p>
+<p>The Idea of "The Void" is that a infinitely sized entity is chasing the player from left to right, this entity is called the "Void" and is essentially a gigantic black wall of fog and mist. This void kills any living thing that it encompasses and therefore is the players ultimate objective to get away from.</p>
+<p>To make this more of a interesting game, there is a slight twist on the standard endless runner genre. The player dosen't really get rewarded for the distance travelled and instead get all their reward from looting objects, killing enemies etc. These are inside buildings that the player must break into and search in order to get loot and money</p>
+<p>This means that the player is in a constant state of questioning whether they should risk getting caught by the void or try to put more distance between them before trying to loot anything.</p>
+<p>Ongoing project started October 1st</p>
   <div id = "body">
     <h2>Features</h2>
     <div id="seperator"></div>
-    <div class="features">
-      <div>
-        <li>Using Unity CG to create a landscape shader</li>
-        <li>Generating Heightmaps through Perlin noise</li>
-      </div>
-      <div>
-        <li>Generating Falloff Maps</li>
-        <li>Creating chunks with various Levels of Details to allow for optimisations based around where the player currently was in the map. </li>
-      </div>
-      <div>
-        <div class="videoFrame"><img class="pic" src="images/PCG/Pic1.png"></div>
-      </div>
-      <div>
-        <div class="videoFrame"><img class="pic" src="images/PCG/Pic2.png"></div>
-      </div>
-    </div>
-    <div>
+		<ul>
+			<li>Infinite World Generation, in both horizontal and vertical fashions</li>
+			<li>Lootable Objects of different rarities and values</li>
+			<li>Optimised approach to A* Graph Generation where only the immediate space around the player is scanned, AI also are not active the second they get out of this A* graph</li>
+			<li>Reusable Ad Manager that can be dropped into any project provided they have a Apple App Store ID or a Google Project ID</li>
+			<li>Reusable Save and Load System based on serialized data structures</li>
+			<li>Cloud Storage using Firebase</li>
+			<li>Dynamically Scaled UI to ensure good looking UI on all screen sizes</li>
+			<li>Inventory Systems for player weapons</li>
+			<li>Weapons can be upgraded for in game currencies</li>
+			<li>Player stat upgrades</li>
+		</ul>
       <h2>Tweets</h2>
       <div id="seperator"></div>
       <div class="tweets">
-        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Implemented flat shading into my <a href="https://twitter.com/hashtag/procedural?src=hash&amp;ref_src=twsrc%5Etfw">#procedural</a> generation project. Looks nice, also added generated collision meshes allowing you to walk around <a href="https://twitter.com/hashtag/gamedev?src=hash&amp;ref_src=twsrc%5Etfw">#gamedev</a> <a href="https://twitter.com/hashtag/gamedevelopment?src=hash&amp;ref_src=twsrc%5Etfw">#gamedevelopment</a> <a href="https://twitter.com/hashtag/madeinunity?src=hash&amp;ref_src=twsrc%5Etfw">#madeinunity</a> <a href="https://twitter.com/hashtag/indiedev?src=hash&amp;ref_src=twsrc%5Etfw">#indiedev</a> <a href="https://twitter.com/hashtag/indiegamedev?src=hash&amp;ref_src=twsrc%5Etfw">#indiegamedev</a> <a href="https://twitter.com/hashtag/gaming?src=hash&amp;ref_src=twsrc%5Etfw">#gaming</a> <a href="https://twitter.com/hashtag/unity2020?src=hash&amp;ref_src=twsrc%5Etfw">#unity2020</a> <a href="https://t.co/rnvb5tmL8M">pic.twitter.com/rnvb5tmL8M</a></p>&mdash; Adam Harris (@AdamHarrisDev) <a href="https://twitter.com/AdamHarrisDev/status/1429725409701253121?ref_src=twsrc%5Etfw">August 23, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Some fun with procedurally generated landmasses. Including falloff maps, different colour regions for heights, seeding, and other tweakable values. <a href="https://twitter.com/hashtag/gamedev?src=hash&amp;ref_src=twsrc%5Etfw">#gamedev</a> <a href="https://twitter.com/hashtag/pcg?src=hash&amp;ref_src=twsrc%5Etfw">#pcg</a> <a href="https://twitter.com/hashtag/procedural?src=hash&amp;ref_src=twsrc%5Etfw">#procedural</a> <a href="https://twitter.com/hashtag/indiedev?src=hash&amp;ref_src=twsrc%5Etfw">#indiedev</a> <a href="https://t.co/XAIwlfYEvu">pic.twitter.com/XAIwlfYEvu</a></p>&mdash; Adam Harris (@AdamHarrisDev) <a href="https://twitter.com/AdamHarrisDev/status/1428718906127093768?ref_src=twsrc%5Etfw">August 20, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Started to work on a mobile game. Introducing &quot;The Void&quot; (WIP). A infinite runner where the player has to get away from a slow moving black fog called &quot;The Void&quot;, however the player will get little reward for getting further away from the void \1</p>&mdash; Adam Harris (@AdamHarrisDev) <a href="https://twitter.com/AdamHarrisDev/status/1573616827753791489?ref_src=twsrc%5Etfw">September 24, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
       </div>
     </div>
       <h2>Challenges</h2>
       <div id="seperator">
-      <p>Optimisation: Originally when developing the project I did not think about LOD for chunks or a max render distance and would just render a giant sector of chunks, while this did work it took up  a large amount of memory and took a long time to load, I added a render distance which meant any chunk that was further than 3 chunks from the player would not be generated, this improved memory usage and processing time. Each new thread generated would also be put onto a different thread which would improve the synchronicity of the project. </p>
-      <p>Colliders: Generating colliders for each chunk was a massive computational undertaking as it takes a lot of processing on Unity’s Physics engine to create colliders during runtime, to get around this the amount of vertices in each collider were reduced so that they would only generate vertices if there was a change in gradient of the slope, this reduced the amount of vertices by a lot but would there was still the problem of far off chunks using a lot of processing performance to checking for collisions, to get around this the only active colliders would be the player’s current chunk and the next closest chunk this stop a large amount of background processing.</p>
+      <p>Optimisation: Due to limited processing power of some mobile devices a lot of consideration went into developing the AI and world generation systems so that it will not slow down the device as the player traverses the world</p>
+	  <p>One of the solutions to the optimisation problem is that AI will only be active when they are inside a movable A* Grid that positions itself in a 40x40 space around the player.</p>
+	  <p>To reduce A* graph generation slowdowns the A* graph is only generated when the player is over 10 units away from the place where the grid was last generated, this means that the graph generation has little to no constant performance impact</p>
+	  <p>Collision testing: As this is a infinite world testing collision on all the chunks, AI, lootables etc generated will begin to take a performance toll when the player is far away from the start of the level</p>
+	  <p>The solution to this is to disable the colliders of any object that collides with the "Void" this moving object goes from left to right and hits everything making it the ideal control object for deciding when to disable an objects collisions</p>
     </div>
   </div>
 
